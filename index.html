@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+</head>
+
+<style>
+body{
+ font-family: arial;
+ 
+}
+.container{
+    position:relative;
+    margin: auto;
+    width: 950px; height: 250px;
+    background-image: url('banniere.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.container1{
+    position:relative;
+    margin: auto;
+    width: 950px; height: 300px;
+    background-size: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.informations-bar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 58px;
+    background-color: #151728;
+}
+.profil{
+    position: absolute;
+    display: flex; align-items: center;
+    bottom: 20px; left: 25px;
+}
+.profil img {
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    border:3px solid #151728;
+}
+ul{
+    
+    position:relative;
+    width: 100%;
+    display: flex;
+    padding-left: 200px;
+    height: 100%; margin: 0;
+}
+li {
+    list-style: none;
+    cursor: pointer;color: whitesmoke;
+    font-size: 1.1em; padding: 1.5em 1em;
+}
+li:hover, .active a{
+    color: white;
+    border-bottom: 3px solid #1488fa;
+}
+a{
+    color:  #007bc4;
+}
+.name{
+    color: white;
+    margin-left: 1.5em;
+    font-size: 1.5em;
+}
+.corpscv{
+    position:relative;
+    margin: auto;
+    width: 950px; height: auto;
+    background-color:white;
+    ;
+
+}
+.corpscvd{
+    position:relative;
+    margin: auto;
+    width: 950px; height: auto;
+    background-color:#007bc4;
+    ;
+
+}
+.corpscvc{
+    position:relative;
+    margin: auto;
+    width: 950px; height: auto;
+}
+.titre{
+    line-height: 1.3;
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.color{
+    color:  #007bc4;
+}
+.colord{
+    text-decoration: none;
+    color: #007bc4;
+}
+input[type = button]{
+    display: inline-block;
+    border-radius: 5rem;
+    background-color: #007bc4;
+    padding: 1rem 2.5rem;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer{
+    position:relative;
+    margin: auto;
+    padding: auto;
+    width: 950px; height: 250px;
+    border-radius: 5px;
+    color: white;
+    background-color:#333333;
+}
+.des{
+    margin-left: 25%;
+}
+h3{
+    color: #007bc4;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    font-size: 20px;
+}
+.post{
+    color: white;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-left: -5%;
+}
+.right{
+    margin: 0;
+    padding: 0;
+    margin-top: -5%;
+}
+.right p{
+    margin-left: 600px;
+    letter-spacing: .1rem;
+}
+.info{
+    width: 20px;
+    height: 20px;
+}
+
+
+.atouts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10%;
+}
+.div{
+    margin-left: 10%;
+}
+.skls{
+    padding: 0;
+    width: 40%;
+    margin-left: 10%;
+}
+.cool{
+    background-color: #fff;
+    border: 2px solid #ccc;
+    width: 300px;
+    height: 7px;
+}
+.po{
+    margin-top: 20px;
+}
+strong{
+    color:  #007bc4;
+    text-decoration: none;
+}
+.inner{
+    height: 100%;
+    background-color:  #007bc4;
+}
+.interet{
+    margin-left: 10%;
+}
+span{
+    margin-left: 10%;
+}
+.fixe{
+
+}
+
+</style>
+
+<body>
+    <header class="fixe">
+    <div class="container">
+         <div class="informations-bar">
+            <!-- Liens -->
+                <ul>
+                    <li class="active"><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#Bio">Bio</a></li>
+                    <li><a href="#diplome">Diplomes</a></li>
+                    <li><a href="#experience">Expériences</a></li>
+                    <li><a href="#competence">compétences</a></li>
+                    <li><a href="#cvpdf">Version PDF de mon CV</a></li>
+                </ul>
+            <!--profil-->
+            <div class="profil">
+                <img src="profil.jpg" alt="profil">
+                <p class="name">David HAMAYADJI</p>
+            </div>
+         </div> 
+    </div>
+</header>
+    <br>
+    <section class="corpscv">
+        <!-- SECTION HOME PAGE-->
+    <section id="home-page" class="container1">
+        <div class="heading text-center align-middle">
+         <center><h3>BIENVENUE</h3></center>
+          <center><h1 class="titre">Je suis<span class="color">HAMAYADJI NGOMNA DAVID JANVION</span> étudiant en Licence 3 informatique. Je
+            vous invite à consulter mon portfolio dont je mets régulièrement le 
+            contenu à jour. Mes compétences sont généralement basées sur mon expérience
+            personnelle et les diverses formations acquises au cours de mon évolution.
+            Cliquez sur <a href="#Bio">Ma biographie</a> pour en savoir plus ou téléchagez directement 
+            la <a href="#cvpdf">version PDF</a> de mon CV. <center><span class="color" >Bonne visite !</span></center> 
+          </h1></center>
+        </div>
+      </section>
+      <!-- END HOME PAGE-->
+        </div>
+ 
+        <div>   
+        </div>
+    </section>
+
+    <section class="corpscv">
+        <!-- SECTION ABOUT-->
+     <section id="Bio">
+        <div class="red-divider"></div>
+        <div class="heading">
+        </div>
+        
+        <div class="titre">
+            <center><h3>A propos de moi</h3></center>
+          <div class="row">
+            <div class="col-sm-12 ">
+              <h3> David Hamayadji, 21 ans.</h3>
+              <p>Etudiant en <span class="color">Informatique Fondamentale</span> à l'université de Ngaoundere <strong>Faculté des Sciences (FS)</strong>, je me passionne pour
+                les techniques de <strong>Sécurité des réseaux et l'informatique dans sa globalité</strong> ainsi que la 
+                <strong>sécurité informatique.</strong>
+              </p>
+              <p>
+                Je suis actuellement 
+                <strong>en fin d'études et en stage</strong> pour renforcer toutes mes compétences acquises 
+                et mettre en pratique le savoir acquis durant ma formation.
+              </p>
+              <center> <span class="color"><p>Merci et Bonne visite !</p></span></center>
+             
+            </div>
+         
+          </div>
+        </div>
+      </section>
+      <!-- END ABOUT-->
+    </section>
+
+    <section class="corpscv">
+        <!-- SECTION EDUCATION -->
+      <section class="titre">
+        <div class="red-divider"></div>
+        <div id="diplome"></div>
+        <div class="heading">
+         <center><span class="color"><h2>Diplômes</h2></span></center>
+        </div>
+      
+        <div class="diplome">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="education-block">
+                <h5>2020-2021</h5>
+                <span class="glyphicon glyphicon-education"></span>
+                <h3>Baccalauréat</h3>
+                <h4>Scientifique - spécialité Mathématiques et sciences physiques (C)</h4>
+                <div class="red-divider"></div>
+                <h5>Mention Passable</h5>
+                <div style="padding-bottom: 33px;"></div>
+              </div>
+            </div>
+    
+            <div class="col-md-6">
+              <div class="education-block">
+                <h5>2023-2024</h5>
+                <span class="glyphicon glyphicon-education"></span>
+                <h3>Licence</h3>
+                <h4>Fondements de l'Informatique</h4>
+                <div class="red-divider"></div>
+                <h5>
+                  En Cours ...
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+              <div class="education-block">
+                <h5>2022-2023</h5>
+                <span class="glyphicon glyphicon-education"></span>
+                <h3>Administrateur Système et services d'infrastructures informatiques </h3>
+                <h4>
+                  Réseaux et Sécurite Informatique (En ligne)
+                </h4>
+                <div class="red-divider"></div>
+                <h5>
+                 En cours...
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- FIN EDUCATION -->
+    </section>
+    <center><span class="color"><h2>Expériences professionelles</h2></span></center>
+    <section class="corpscvd">
+        <!-- SECTION EXPERIENCE-->
+       <section class="experience" id="experience">
+         <div class="colord">
+          <div id="experience"></div>
+           <div class="red-divider"></div>
+           <div class="heading">
+            
+           </div>
+           <ul class="">
+             <li>
+               <div class="">
+                 <span class=""></span>
+               </div>
+               <div class="timeline-panel-container">
+                 <div class="timeline-panel">
+                   <div class="timeline-heading">
+            
+                   </div>
+                   <div class="timeline-body">
+                    <br/><br/>
+                     <p>
+                        -Zoom sur la productivité
+                     </p>
+                     <p>-Amélioration de la qualité</p>
+                     <p>
+                       -Planification et consultation
+                     </p>
+                     <p>
+                       -Etablissement des nouvelles stratégies 
+                     </p>
+                   </div>
+                 </div>
+               </div>
+             </li>
+             <li>
+               <div class="timeline-badge">
+                 <span class="glyphicon glyphicon-briefcase"></span>
+               </div>
+               <div class="timeline-panel-container-inverted">
+                 <div class="timeline-panel">
+                   <div class="timeline-heading">
+                     <h3>Projet Vector Link</h3>
+                     <h4>Prévention palu</h4>
+                     <p class="text-muted">
+                       <small class="glyphicon glyphicon-time"></small>Juillet 2020
+                       - juillet 2022
+                     </p>
+                   </div>
+                   <div class="timeline-body">
+                     <p>-Dépouillement</p>
+                     <p>
+                       -Collecte des données.
+                     </p>
+                     <p>-Analyse des données</p>
+                     <p>
+                       -Vérification de la couverture
+                     </p>
+                   </div>
+                 </div>
+               </div>
+             </li>
+           </ul>
+         </div>
+       </section>
+       <!-- FIN EXPERIENCE-->
+     </section>
+
+     <section class="corpscvc">
+        <section class="section-left">
+            <h4>Atouts</h4>
+            <hr class="light">
+            <div class="atouts">
+                <div>Travail d'équipe</div>
+                <div>
+                    Collaboration avec d'autres membres d'une équipe<br>
+                    La résolution de problèmes en équipe<br>
+                    La capacité à travailler sous pression.
+                </div>
+                <div>Adaptabilité/flaxibilité</div>
+                <div>Durant notre projet, je me suis adapté à des changements et des imprévus et j'ai du apprendre le php pour être à jour avec mes coéquipiers.</div>
+            </div>
+            <h4>Diplomes et Formations</h4>
+            <hr class="light">
+            <div class="div">
+                <div><b>Baccalauréat série C</b>
+                    <br><strong>Lycée de Ngaoundal</strong>, Ngaoundal, Adamaoua
+                </div>Session 2021<br><br>
+                <div><b>Hacking éthique</b>
+                    <br><strong>Université de Ngaoundéré</strong>, Ngaoundéré
+                </div>30/04/2023
+            </div>
+            <h4>Expériences professionneles</h4>
+            <hr class="light">
+            <div class="div">
+                <p>
+                    Creation d'un site de vente de chaussures<br/>
+                    Conception d'une mini-calculatrice sous le système Android
+                    <strong>Projet de salle</strong>
+                </p>
+                
+            </div>
+        </section>
+
+        <section class="section-right">
+            <h4>Compétences</h4>
+            <hr class="light">
+            <div class="skls">
+              <div id="competence"></div>
+                <div class="pro">
+                    <p>HTML</p>
+                    <div class="cool">
+                        <div style="width: 80%" class="inner"></div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <p>CSS</p>
+                    <div class="cool">
+                        <div style="width: 80%" class="inner"></div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <p>JavasCript</p>
+                    <div class="cool">
+                        <div style="width: 50%" class="inner"></div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <p> PHYTON OU AUTRES</p>
+                    <div class="cool">
+                        <div style="width: 35%" class="inner"></div>
+                    </div>
+                </div>
+            </div>
+            <h4>Langues</h4>
+            <hr class="light">
+            <div class="skls">
+                <div class="pro">
+                    <p>Français</p>
+                    <div class="cool">
+                        <div style="width: 80%" class="inner"></div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <p>Anglais</p>
+                    <div class="cool">
+                        <div style="width: 80%" class="inner"></div>
+                    </div>
+                </div>
+                <div class="pro">
+                    <p>Gbaya</p>
+                    <div class="cool">
+                        <div style="width: 40%" class="inner"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <h4>Centres d'intérets</h4>
+            <hr class="light">
+            <div class="interet">
+                <div><b>Sport</b></div>
+                <div><b>Cinéma</b></div>
+                <div><b>Voyage</b></div>
+                <div><b>Jeux vidéos</b></div>
+                <div><b>Programmation</b></div>
+            </div>
+        </section> 
+        <section class="corpscv" id="cvpdf">
+            <h1 class="titre">
+                Téléchargez
+                en <br> version PDF </span>mon 
+                CV </span>
+            </h1>
+        <iframe src="CV_EMERAN.pdf" width="950" height="250"></iframe>
+    </br></br></br>
+    <a href="CV_EMERAN.pdf" download>
+    
+     <input type="button" value="Download" id="btn">
+    </a>
+    </section>
+    
+
+    <footer>
+        
+        <div class="des">
+            <h3>David Hamayadji</h3>
+            <p class="post">Administrateur Système & Réseaux</p>
+        </div>
+        <div class="right">
+
+            <p><img src="envelope-at.svg" class="info"> davyhamayadji@gmail.com</p>
+            <p><img src="facebook.svg" class="info"> Janvion Hamayadji</p> 
+            <p><img src="twitter.svg" class="info"> @Davyhamayadji</p>
+            <p><img src="telephone.svg" class="info"> 670335169</p>
+            <p><img src="whatsapp.svg" class="info"> +237691906724</p>
+        </div>
+    </footer> 
+
+</body>
+</html>
